@@ -13,6 +13,15 @@ Before you begin, ensure you have met the following requirements:
 - Maven
 - Docker (for containerization)
 
+
+## Architecture
+
+The application is composed of several microservices, each responsible for a specific piece of functionality within the toll rate management system. The services communicate with each other using RESTful APIs and are orchestrated using the following components:
+
+- **Service Discovery**: Allows services to find and communicate with each other without hard-coded hostnames and ports.
+- **Config Server**: Centralizes external configuration management across all services in the microservices architecture.
+
+
 ## Installation
 
 To install the Tollrate application, follow these steps:
