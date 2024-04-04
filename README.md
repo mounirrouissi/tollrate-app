@@ -15,12 +15,11 @@ Before you begin, ensure you have met the following requirements:
 
 
 ## Architecture
-
 The application is composed of several microservices, each responsible for a specific piece of functionality within the toll rate management system. The services communicate with each other using RESTful APIs and are orchestrated using the following components:
-
 - **Service Discovery**: Allows services to find and communicate with each other without hard-coded hostnames and ports.
-- **Config Server**: Centralizes external configuration management across all services in the microservices architecture.
-
+- **Load Balancer**: Distributes incoming traffic among multiple instances of services to ensure optimal resource utilization and response times.
+- **Circuit Breaker (Resilience4j)**: Implements a circuit breaker pattern to prevent system failure and allow for graceful degradation of functionality in the event of service errors or delays.
+- **API Gateway**: Serves as a single entry point for all client requests, providing API routing, composition, and protocol translation.
 
 ## Installation
 
